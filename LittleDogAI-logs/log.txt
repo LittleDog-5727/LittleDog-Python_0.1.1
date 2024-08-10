@@ -1,0 +1,33 @@
+LittleDogAI-Logdependency instructions TRUE
+dependency instructions TRUE
+CODE:
+requirements='''To run this program, make sure you have OpenCV installed.\nYou can install it by running: pip install opencv-python'''
+print(requirements)
+import cv2
+cap=cv2.VideoCapture(0)
+if not cap.isOpened():
+    raise IOError("Cannot open webcam")
+while(True):
+    ret,frame=cap.read()
+    gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    cv2.imshow('Grayscale Webcam Feed',gray)
+    if cv2.waitKey(1) & 0xFF==ord('q'):   
+        break
+cap.release()
+cv2.destroyAllWindows()
+
+warnings TRUE
+warnings FALSE
+dependency instructions TRUE
+CODE:
+Info = """No additional installations required """
+print(Info)
+s = input()
+print(any(c.isalnum() for c in s))
+print(any(c.isalpha() for c in s))
+print(any(c.isdigit() for c in s)) 
+print(any(c.islower() for c in s))
+print(any(c.isupper() for c in s))
+
+warnings TRUE
+warnings FALSE
