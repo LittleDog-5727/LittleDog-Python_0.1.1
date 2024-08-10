@@ -47,7 +47,7 @@ def littledogai_lilfy(code:str = ".", warings:bool = True, dependency_list:bool 
             return
 
         # Configure Google Generative AI
-        api_key = "AIzaSyCi5EYAd8kASk2UQG-BZAIugmOHieQmLUw"
+        api_key = "API-KEY-TO-GEMINI"
         genai.configure(api_key=api_key)
         generation_config = {"temperature": 1.5, "top_p": 1, "top_k": 1, "max_output_tokens": 200000}
         model = genai.GenerativeModel("gemini-1.5-pro", generation_config=generation_config)
@@ -110,7 +110,7 @@ def littledogai_lilfy_IMAGE(code:str = ".", image_path:str = ".", warings:bool =
             return
         
         # Configure Google Generative AI
-        api_key = "AIzaSyCi5EYAd8kASk2UQG-BZAIugmOHieQmLUw"
+        api_key = "API-KEY-TO-GEMINI""
         genai.configure(api_key=api_key)
         generation_config = {"temperature": 1.5, "top_p": 1, "top_k": 1, "max_output_tokens": 200000}
         model = genai.GenerativeModel("gemini-1.5-pro", generation_config=generation_config)
