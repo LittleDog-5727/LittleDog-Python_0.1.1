@@ -7,4 +7,4 @@ pip install opencv-contrib-python numpy matplotlib google-generativeai
 Test Pypi source - https://test.pypi.org/project/Littledog-LittleDog5727/0.1.1/ (Source code & Build)<br>
 Pypi source - https://pypi.org/project/Littledog/0.1.1/<br>
 Official website - https://www.sites.google.com/view/littledog-python<br>
-Github repository - https://github.com/LittleDog5727/littledog-python
+Github repository - https://github.com/LittleDog-5727/LittleDog_0.1.1
